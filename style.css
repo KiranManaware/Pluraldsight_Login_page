@@ -1,0 +1,291 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+.mainContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftChild{
+    height: 100vh;
+    width: 50%;
+    background-color: black;
+    color: white;
+}
+.rightChild{
+    color: white;
+    height: 100vh;
+    width: 50%;
+    background-image: url(login-bg\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.rightChild h1{
+    font-size: 100px;
+    text-align: center;
+}
+.rightChild #btn3{
+    height: 70px;
+    width: 400px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 25px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+}
+
+.leftChild{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.leftChild img{
+    height: 10%;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+form input{
+    height: 70px;
+    width: 60%;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid rgb(138, 137, 137);
+}
+#btn1{
+    height: 70px;
+    width: 60%;
+    border-radius: 5px;
+    background-color: rgb(27, 78, 117); 
+    border: none;
+    color: white;  
+    font-size: 20px; 
+    margin-bottom: 3%; 
+
+}
+#btn2{
+    height: 70px;
+    width: 60%;
+    border-radius: 5px;
+    background-color: rgb(100, 95, 95);
+    color: white;   
+    border: none;
+    font-size: 20px;
+    margin-bottom: 4%; 
+}
+#label1{
+    font-size: 35px;
+    margin-right: 150px;
+    margin-top: 5%;
+}
+#label2{
+    font-size: 35px;
+    margin-right: 290px;
+
+}
+#in1{
+    margin-bottom: 3%;
+}
+#in2{
+    margin-bottom: 3%;
+}
+form a{
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(40, 100, 161);
+    margin-bottom: 3%;
+}
+form hr{
+    width: 60%;
+    margin-bottom: 4%;
+   
+}
+form p{
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+form span a{
+    color: white;
+   
+}
+a:hover{
+    border-bottom: 2px solid rgb(31, 87, 151);
+}
+span a:hover{
+    color:rgb(31, 87, 151);
+    border-bottom: 2px solid rgb(31, 87, 151);
+
+}
+
+
+/* Code that make page responsive Responsive  */
+/* for laptop */
+@media (max-width:1200px) {
+    
+    .rightChild{
+        width: 50%;
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
+    }
+    .rightChild h1{
+        font-size: 40px;
+    }
+    .leftChild img{
+        height: 10%;
+        width: 50%;
+        margin-right: auto;
+    }
+    form input{
+        height: 57px;
+        width: 67%;
+    }
+    #btn1{
+        height: 57px;
+        width: 67%;
+    }
+    #btn2{
+        height: 57px;
+        width: 67%;
+    }
+    #label1{
+        font-size: 23px;
+    }
+    #label2{
+        font-size: 23px;
+        margin-right: 48%;
+    }
+    form a{
+        font-size: 16px;
+    }
+    form p {
+        font-size: 17px;
+    }    
+}
+/* for tablets */
+@media (max-width:768px) {
+    .rightChild h1{
+        font-size: 30px; 
+    }
+    .rightChild #btn3{
+        height: 10%;
+        width: 65%;
+        font-size: 20px;
+    }
+    .leftChild img{
+        width: 70%;
+        height: 10%;
+        margin-top: 20%;
+        margin-left: 10%;
+    }
+    form input{
+        height: 15%;
+        width: 65%;
+    }
+    form button{
+        height: 15%;
+        width: 65%;
+      
+        
+    }
+    #btn1{
+        margin-top:3%;
+    }
+    #btn2{
+        margin-top: 3%;
+    }
+    form a{
+        margin-top:3%;
+
+    }
+    #label1{
+        font-size: 16px;
+        margin-right: 26%;
+        margin-top: 4%;
+    }
+    #label2{
+        font-size: 16px;
+        margin-right: 44%;
+        
+    }
+    form p{
+        font-size: 13px;
+        
+    }
+    
+}
+/* for mobiles */
+@media (max-width:480px) {
+    .mainContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .rightChild{
+        width: 100%;
+       
+    }
+    .leftChild{
+        width: 100%;
+        height:auto ;
+    }
+    .leftChild img{
+        width: 70%;
+        height: 10%;
+        margin-top: 8%;
+        margin-left: 15%;
+    }
+    form input{
+        height: 40px;
+        width: 65%;
+    }
+    #btn1{
+        height: 40px;
+        width: 65%; 
+        margin-top:3%;
+        
+    }
+    #btn2{
+        height: 40px;
+        width: 65%; 
+        margin-top: 3%;
+    }
+    #label1{
+        font-size: 15px;
+        margin-right: 36%;
+        margin-top: 4%;
+    }
+    #label2{
+        font-size: 15px;
+        margin-right: 50%;        
+    }
+    form p{
+        text-align: center;
+        font-size: 13px;
+    }
+    form hr{
+        width: 66%;
+    }
+
+}
+
